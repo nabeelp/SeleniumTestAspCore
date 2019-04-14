@@ -1,5 +1,5 @@
 # SeleniumTestAspCore
-Test ASP.Net MVC app using Selenium, and running in a Linux container on Azure Web Apps
+Test ASP.Net MVC API using Selenium, and running in a Linux container on Azure Web Apps
 
 # Introduction
 The purpose behind this exercise was to understand how the [Selenium WebDriver](https://www.seleniumhq.org/projects/webdriver/) could be used in Azure Web Apps.  As per the docs on the [Unsupported Frameworks in Azure Web App Sandbox](https://github.com/projectkudu/kudu/wiki/Azure-Web-App-sandbox#unsupported-frameworks), PhantomJS/Selenium is unsupported as it tries to connect to a local address, and also uses GDI+.  This ruled out the use of Functions, so the next step was to see if we could it to work within a Linux Container on Azure Web Apps.
